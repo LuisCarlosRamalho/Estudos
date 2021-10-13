@@ -1,0 +1,147 @@
+.container{
+  display: none;
+  width: var(--width);
+  height: var(--height);
+  margin-top: 10rem;
+}
+
+/*CONTAINER SING UP*/
+.container .container__singup{
+  background: var(--color-blueligth);
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.subtitle{
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.title{
+  font-family: 'Red Rose', cursive;
+  font-size: 3.4rem;
+  margin-bottom: 3.6rem;
+}
+
+.container__singup p{
+  text-align: justify;
+  margin-bottom: 1.7em;
+}
+
+.container__singup #register{
+  background: var(--color-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  width: 12rem;
+  border-radius: 3rem;
+  transition: .4s ease-in;
+}
+
+.container__singup #register a{
+  text-decoration: none;
+  color: var(--color-white);
+  height: 2.5rem;
+  margin-top: .6rem;
+}
+
+
+.container__singup #register:hover{
+  background: var(--color-green);
+  transition: .4s ease-out;
+}
+
+
+/*CONTAINER LOG IN*/
+.container__login{
+  background: var(--color-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-white);
+  height: var(--height);
+}
+
+.container__login .tittle__login{
+  font-family: 'Red Rose', cursive;
+  font-size: 1.8rem;  
+  margin-top: 5.2rem;
+}
+
+.container__login p{
+  font-size: 1.2rem;
+  margin-bottom: 4.7rem;
+}
+
+.container__login h3{
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-bottom: 2.5rem;
+}
+
+.container__login input{
+  background: var(--color-darkligth);
+  height: 4rem;
+  width: 26rem;
+  border: unset;
+  padding-left: 1.4rem;
+  outline: none;
+  color: var(--color-greylight);
+  caret-color: var(--color-greylight);
+}
+
+
+/*CONTAINER LOG IN -> INPUTS*/
+.container__login input:focus{
+  background: var(--color-darkligth2);
+}
+
+.container__login input[type ="password"]{
+  margin-top: 1.5rem;
+}
+
+.login__input{
+  background: var(--color-greylight);
+  height: .1rem;
+  width: 100%;
+}
+
+.button__login{
+  cursor: pointer;
+  margin-top: 3rem;
+  width: 11.9rem;
+  height: 2.5rem;  
+  border-radius: 3rem;
+  background:transparent;
+  font-size: 1.4rem;
+  border: solid .1rem var(--color-greylight);
+  color: var(--color-blueligth);
+  transition: .4s ease-out;
+}
+
+.button__login:hover{
+  background: var(--color-green);
+  transition: .4s ease-out;
+  color: var(--color-white);
+}
+
+.forgot__pass{
+  margin-top: -4rem;
+  font-size: 1.1rem;
+}
+
+.forgot__pass a{
+  text-decoration: none;  
+  color: var(--color-white);
+}
+
+
+/*CONTAINER SIGN UP -> INPUTS*/
+.second__container{
+  position: absolute;
+}
