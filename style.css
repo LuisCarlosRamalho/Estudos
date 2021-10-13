@@ -1,5 +1,5 @@
 .container{
-  display: none;
+  display: flex;
   width: var(--width);
   height: var(--height);
   margin-top: 10rem;
