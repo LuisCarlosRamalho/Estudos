@@ -19,71 +19,79 @@
 <body>
 <div class="allcontainer">
 
-  <!--REGISTER SCREEN-->
-  <div class="container firt__container">
-    <div class="container__singup">
-      <h2 class="subtitle">Welcome to</h2>
-      <h1 class="title">MAVERICK</h1>
-      <span><p>Our system will help you organize all your sales. Maverick was developed to facilitate the recording of your entire relationship with the customer, from prospecting to signing the sales contract.
-      </p></span>
+  <!--container com informações do login e acesso ao signup-->
+  <div class="container__login">
+    <!--container com as informações do sistema e botão de signup-->
+    <div class="blue__container">
+      <span>Welcome to</span> <!--bc = blue__container-->
+      <h1 class ="title__bc">MAVERICK</h1>
 
-      <div id="register">
-        <a href="#">Sign Up</a>
-      </div>
+      <p>Our system will help you organize all your sales. Maverick was developed to facilitate the recording of your entire relationship with the customer, from prospecting to signing the sales contract.
+      </p>
+
+      <button class="button__signup">Sign Up</button>
+
+    </div>
+
+
+    <!--container com os inputs para fazer o login-->
+    <div class="dark__container">
+
+        <div class="header__dc">
+          <span>MAVERICK</span>
+          <p>B2B Sales Development Representative</p>
+          <h4>Log in to access your account</h4>  
+        </div>
+
+      <form action="" class="form_input">
+          <input type="text" name="user_login" id="user__login" placeholder="User Name">
+          <span class="input__login"></span>
+
+          <input type="password" name="user__password" id="user__password" placeholder="User password">
+          <span class="input__login"></span>
+          
+         
+          <input type="submit" value="LogIn" class="btn__login">
+                  
+      </form>
+
+      <a href=""><p>Forgot you password?</p></a>
     </div>
     
-<!--SIGN UP SCREEN-->
-<form action="" method="POST">
-    <div class="container__login">
-      <span class="tittle__login">MAVERICK</span>
-      <P>B2B Sales Development Representative</P>
 
-      <h3>Log in to access your account</h3>
+  </div>
 
-      <input type="text" name="user_name" id="user_name" placeholder="User Name">
-      <span class="login__input"></span>
-
-      <input type="password" name="user_password" id="user_password" placeholder="Password">
-      <span class="login__input"></span>
-
-      <button type = "submit" class="button__login">Sing In</button>
-
+  <!--container do registro-->
+<div class="container__register">
+  <div class="dark__container">
+    <div class="header__dc">
+      <span>MAVERICK</span>
+      <p>B2B Sales Development Representative</p>
     </div>
-    <p class="forgot__pass"><a href ="">Forgot password?</a></p>
-  </div>
-</form>
+    <form action="" class="form_input">
+      <input type="text" name="user_login" id="user__login" placeholder="User Name">
+          <span class="input__login"></span>
 
+          <input type="text" name="user_login" id="user__login" placeholder="User Name">
+          <span class="input__login"></span>
 
-<div class="container__sigup second__container">
- <form action="">
+          <input type="text" name="user_login" id="user__login" placeholder="User Name">
+          <span class="input__login"></span>
 
-  <span class="tittle__login">MAVERICK</span>
-  <P>B2B Sales Development Representative</P>
+          <input type="text" name="user_login" id="user__login" placeholder="User Name">
+          <span class="input__login"></span>
 
-  <h3>Log in to access your account</h3>
+          <input type="submit" value="Register" class="btn__login">
 
-  <div class="singup__container">
-    <input type="text" name="full__name" id="full__name" placeholder="Full Name">
-    <span class="input__login"></span>
-
-    <input type="text" name="user__name" id="user__name" placeholder="User Name">
-    <span class="input__login"></span>
-
-    <input type="email" name="email__user" id="email__user" placeholder="Emil">
-    <span class="input__login"></span>
-
-    <input type="password" name="password__user" id="password__user" placeholder="Password">
-    <span class="input__login"></span>
-
-    <button type = "submit" class="button__signup">Register</button>
+    </form>
 
   </div>
- </form>   
-  
+
+  <div class="blue__container">
+  </div>
 </div>
 
 </div>
-
-  
+ 
 </body>
 </html>

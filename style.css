@@ -1,147 +1,127 @@
-.container{
-  display: none;
+
+/*Container Login*/
+.container__login{
+  display: none;/*aqui fica flex*/
+  justify-content: center;
   width: var(--width);
   height: var(--height);
   margin-top: 10rem;
 }
 
-/*CONTAINER SING UP*/
-.container .container__singup{
+.blue__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: var(--color-blueligth);
-  padding: 3rem 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-white);
-}
-
-.subtitle{
-  font-size: 2rem;
-  font-weight: normal;
-}
-
-.title{
-  font-family: 'Red Rose', cursive;
-  font-size: 3.4rem;
-  margin-bottom: 3.6rem;
-}
-
-.container__singup p{
-  text-align: justify;
-  margin-bottom: 1.7em;
-}
-
-.container__singup #register{
-  background: var(--color-red);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.4rem;
-  width: 12rem;
-  border-radius: 3rem;
-  transition: .4s ease-in;
-}
-
-.container__singup #register a{
-  text-decoration: none;
-  color: var(--color-white);
-  height: 2.5rem;
-  margin-top: .6rem;
-}
-
-
-.container__singup #register:hover{
-  background: var(--color-green);
-  transition: .4s ease-out;
-}
-
-
-/*CONTAINER LOG IN*/
-.container__login{
-  background: var(--color-dark);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--color-white);
+  width: 26rem;
   height: var(--height);
+  color: var(--color-white); 
 }
 
-.container__login .tittle__login{
+.blue__container span{
+  font-size: 2rem;
+}
+
+.blue__container .title__bc{  
   font-family: 'Red Rose', cursive;
-  font-size: 1.8rem;  
-  margin-top: 5.2rem;
+  font-size: 3.4rem; 
 }
 
-.container__login p{
+.blue__container p{
+  margin-bottom: 1.7rem;
+  text-align: justify;
+  padding: 2rem 2rem;
+}
+
+.blue__container .button__signup{
+  color: var(--color-white);
+  background: var(--color-red);
+  border-radius: 3rem;
+  border: none;
+  width: 11.9rem;
+  height: 2.5rem;
+  font-size:1.4rem;
+}
+
+.dark__container{
+  background: var(--color-dark);
+  color: var(--color-white);
+  width: 26rem;
+}
+
+.dark__container .header__dc{
+  width: 100%;
+  margin: 5.2rem 0 4.7rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.dark__container .header__dc span{
+  font-family: 'Red Rose', cursive;
+  font-size: 1.8rem;
+}
+
+.dark__container .header__dc p{
   font-size: 1.2rem;
   margin-bottom: 4.7rem;
 }
 
-.container__login h3{
-  font-size: 1.6rem;
-  font-weight: normal;
-  margin-bottom: 2.5rem;
+.dark__container a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-blueligth);
 }
 
-.container__login input{
+.dark__container a:hover{
+  color: var(--color-greylight);
+}
+
+.form_input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_input input:not(:last-child){
   background: var(--color-darkligth);
-  height: 4rem;
-  width: 26rem;
-  border: unset;
-  padding-left: 1.4rem;
   outline: none;
+  border:none;
+  width: 26rem;
+  height: 4rem;
   color: var(--color-greylight);
   caret-color: var(--color-greylight);
+  padding-left: 1.4rem;
 }
 
-
-/*CONTAINER LOG IN -> INPUTS*/
-.container__login input:focus{
+.form_input input:not(:last-child):hover{
   background: var(--color-darkligth2);
 }
 
-.container__login input[type ="password"]{
-  margin-top: 1.5rem;
-}
-
-.login__input{
-  background: var(--color-greylight);
+.input__login{
   height: .1rem;
   width: 100%;
+  background:var(--color-greylight);
+  margin-bottom: 1.5rem;
 }
 
-.button__login{
-  cursor: pointer;
-  margin-top: 3rem;
+.btn__login{
   width: 11.9rem;
-  height: 2.5rem;  
+  height: 2.5rem;
+  margin: 2.4rem 2.4rem;
   border-radius: 3rem;
-  background:transparent;
-  font-size: 1.4rem;
-  border: solid .1rem var(--color-greylight);
+  background: transparent;
   color: var(--color-blueligth);
-  transition: .4s ease-out;
+  border: var(--color-greylight) solid .1rem;
+  cursor: pointer;
 }
 
-.button__login:hover{
-  background: var(--color-green);
-  transition: .4s ease-out;
-  color: var(--color-white);
-}
+/*container register*/
 
-.forgot__pass{
-  margin-top: -4rem;
-  font-size: 1.1rem;
-}
-
-.forgot__pass a{
-  text-decoration: none;  
-  color: var(--color-white);
+.container__register{
+ position: absolute;
+ display: flex;
+ margin-top: 10rem;
 }
 
 
-/*CONTAINER SIGN UP -> INPUTS*/
-.second__container{
-  position: absolute;
-}
