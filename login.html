@@ -1,196 +1,139 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--CSS-->
-<link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
 
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
 
-<!--FONT-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="allcontainer">
+      <!--container com informações do login e acesso ao signup-->
+      <div class="container__login">
+        <!--container com as informações do sistema e botão de signup-->
+        <div class="blue__container">
+          <span>Welcome to</span>
+          <!--bc = blue__container-->
+          <h1 class="title__bc">MAVERICK</h1>
 
-  <title>Document</title>
-</head>
-<body>
-<div class="allcontainer">
+          <p>
+            Our system will help you organize all your sales. Maverick was
+            developed to facilitate the recording of your entire relationship
+            with the customer, from prospecting to signing the sales contract.
+          </p>
 
-  <!--container com informações do login e acesso ao signup-->
-  <div class="container__login">
-    <!--container com as informações do sistema e botão de signup-->
-    <div class="blue__container">
-      <span>Welcome to</span> <!--bc = blue__container-->
-      <h1 class ="title__bc">MAVERICK</h1>
-
-      <p>Our system will help you organize all your sales. Maverick was developed to facilitate the recording of your entire relationship with the customer, from prospecting to signing the sales contract.
-      </p>
-
-      <button class="button__signup">Sign Up</button>
-
-    </div>
-
-
-    <!--container com os inputs para fazer o login-->
-    <div class="dark__container">
-
-        <div class="header__dc">
-          <span>MAVERICK</span>
-          <p>B2B Sales Development Representative</p>
-          <h4>Log in to access your account</h4>  
+          <button class="button__signup">Sign Up</button>
         </div>
 
-      <form action="" class="form_input">
-          <input type="text" name="user_login" id="user__login" placeholder="User Name">
-          <span class="input__login"></span>
+        <!--container com os inputs para fazer o login-->
+        <div class="dark__container">
+          <div class="header__dc">
+            <span>MAVERICK</span>
+            <p>B2B Sales Development Representative</p>
+            <h4>Log in to access your account</h4>
+          </div>
 
-          <input type="password" name="user__password" id="user__password" placeholder="User password">
-          <span class="input__login"></span>
-          
-         
-          <input type="submit" value="LogIn" class="btn__login">
-                  
-      </form>
+          <form action="" class="form_input">
+            <input
+              type="text"
+              name="user_login"
+              id="user__login"
+              placeholder="User Name"
+            />
+            <span class="input__login"></span>
 
-      <a href=""><p>Forgot you password?</p></a>
-    </div>
-    
+            <input
+              type="password"
+              name="user__password"
+              id="user__password"
+              placeholder="User password"
+            />
+            <span class="input__login"></span>
 
-  </div>
+            <input type="submit" value="LogIn" class="btn__login" />
+          </form>
 
-  <!--container do registro-->
-<div class="container__register">
-  <div class="dark__container">
-    <div class="header__dc">
-      <span>MAVERICK</span>
-      <p>B2B Sales Development Representative</p>
-    </div>
-    <form action="" class="form_input">
-      <input type="text" name="user_name" id="user__name" placeholder="User Name">
-          <span class="input__login"></span>
+          <a href=""><p>Forgot you password?</p></a>
+        </div>
+      </div>
 
-          <input type="text" name="user__login" id="user__login" placeholder="User Login">
-          <span class="input__login"></span>
+      <!--container do registro-->
+      <div class="container__register">
+        <div class="dark__container">
+          <div class="header__dc">
+            <span>MAVERICK</span>
+            <p>B2B Sales Development Representative</p>
+          </div>
+          <form action="" class="form_input">
+            <input
+              type="text"
+              name="user_name"
+              id="user__name"
+              placeholder="User Name"
+            />
+            <span class="input__login"></span>
 
-          <input type="email" name="user__email" id="user__email" placeholder="User Email">
-          <span class="input__login"></span>
+            <input
+              type="text"
+              name="user__login"
+              id="user__login"
+              placeholder="User Login"
+            />
+            <span class="input__login"></span>
 
-          <input type="password" name="user__pswd" id="user__pswd" placeholder="******">
-          <span class="input__login"></span>
+            <input
+              type="email"
+              name="user__email"
+              id="user__email"
+              placeholder="User Email"
+            />
+            <span class="input__login"></span>
 
-          <input type="submit" value="Register" class="btn__login">
+            <input
+              type="password"
+              name="user__pswd"
+              id="user__pswd"
+              placeholder="******"
+            />
+            <span class="input__login"></span>
 
-    </form>
-
-  </div>
-
-  <div class="blue__container-register">
-  </div>
-</div>
-
-</div>
- 
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--CSS-->
-<link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="style.css">
-
-
-<!--FONT-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
-
-  <title>Document</title>
-</head>
-<body>
-<div class="allcontainer">
-
-  <!--container com informações do login e acesso ao signup-->
-  <div class="container__login">
-    <!--container com as informações do sistema e botão de signup-->
-    <div class="blue__container">
-      <span>Welcome to</span> <!--bc = blue__container-->
-      <h1 class ="title__bc">MAVERICK</h1>
-
-      <p>Our system will help you organize all your sales. Maverick was developed to facilitate the recording of your entire relationship with the customer, from prospecting to signing the sales contract.
-      </p>
-
-      <button class="button__signup">Sign Up</button>
-
-    </div>
-
-
-    <!--container com os inputs para fazer o login-->
-    <div class="dark__container">
-
-        <div class="header__dc">
-          <span>MAVERICK</span>
-          <p>B2B Sales Development Representative</p>
-          <h4>Log in to access your account</h4>  
+            <input type="submit" value="Register" class="btn__login" />
+          </form>
         </div>
 
-      <form action="" class="form_input">
-          <input type="text" name="user_login" id="user__login" placeholder="User Name">
-          <span class="input__login"></span>
+        <div class="blue__container-register">
+          <div id="img__rocket">           
+          </div>
 
-          <input type="password" name="user__password" id="user__password" placeholder="User password">
-          <span class="input__login"></span>
-          
-         
-          <input type="submit" value="LogIn" class="btn__login">
-                  
-      </form>
+          <h3>Fill in the information to finalize your registration.
+          </h3>
 
-      <a href=""><p>Forgot you password?</p></a>
+          <h5>With the MAVERICK you can:</h5>
+
+          <ul>
+            <li>Register new customers</li>
+            <li>Edit customer records</li>
+            <li>Keep customer history updated</li>
+            <li>Save contracts, documents, etc.</li>
+          </ul>
+        
+          <button class="button__signup">Sign Up</button>
+        </div>
+
+        </div>
+      </div>
     </div>
-    
-
-  </div>
-
-  <!--container do registro-->
-<div class="container__register">
-  <div class="dark__container">
-    <div class="header__dc">
-      <span>MAVERICK</span>
-      <p>B2B Sales Development Representative</p>
-    </div>
-    <form action="" class="form_input">
-      <input type="text" name="user_name" id="user__name" placeholder="User Name">
-          <span class="input__login"></span>
-
-          <input type="text" name="user__login" id="user__login" placeholder="User Login">
-          <span class="input__login"></span>
-
-          <input type="email" name="user__email" id="user__email" placeholder="User Email">
-          <span class="input__login"></span>
-
-          <input type="password" name="user__pswd" id="user__pswd" placeholder="******">
-          <span class="input__login"></span>
-
-          <input type="submit" value="Register" class="btn__login">
-
-    </form>
-
-  </div>
-
-  <div class="blue__container-register">
-  </div>
-</div>
-
-</div>
- 
-</body>
->>>>>>> 20bdf4fde20a84c237a7b845d9761de6a9197578
+  </body>
 </html>

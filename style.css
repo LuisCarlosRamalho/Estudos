@@ -1,15 +1,13 @@
-<<<<<<< HEAD
-
 /*Container Login*/
-.container__login{
-  display: none;/*aqui fica flex*/
+.container__login {
+  display: flex; /*aqui fica flex*/
   justify-content: center;
   width: var(--width);
   height: var(--height);
   margin-top: 10rem;
 }
 
-.blue__container{
+.blue__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,12 +15,13 @@
   background: var(--color-blueligth);
   width: 26rem;
   height: var(--height);
-  color: var(--color-white); 
+  color: var(--color-white);
 }
 
-.blue__container::before{/*a animação vai usuar essa pseudo classe para fazer
+.blue__container::before {
+  /*a animação vai usuar essa pseudo classe para fazer
   animação de transição */
-  content: "";
+  content: '';
   position: absolute;
   display: none;
   flex-direction: column;
@@ -31,80 +30,79 @@
   background: var(--color-blueligth);
   width: 26rem;
   height: var(--height);
-  color: var(--color-white); 
+  color: var(--color-white);
 
   left: 0%;
-
 }
 
-.blue__container span{
+.blue__container span {
   font-size: 2rem;
 }
 
-.blue__container .title__bc{  
+.blue__container .title__bc {
   font-family: 'Red Rose', cursive;
-  font-size: 3.4rem; 
+  font-size: 3.4rem;
 }
 
-.blue__container p{
+.blue__container p {
   margin-bottom: 1.7rem;
   text-align: justify;
   padding: 2rem 2rem;
 }
 
-.blue__container .button__signup{
+.button__signup {
   color: var(--color-white);
   background: var(--color-red);
   border-radius: 3rem;
   border: none;
   width: 11.9rem;
   height: 2.5rem;
-  font-size:1.4rem;
+  font-size: 1.4rem;
 }
 
-.dark__container{
+.dark__container {
   background: var(--color-dark);
   color: var(--color-white);
   width: 26rem;
 }
 
-.dark__container .header__dc{
+.dark__container .header__dc {
   width: 100%;
   margin: 5.2rem 0 4.7rem 0;
   margin-bottom: 2.5rem;
 }
 
-.dark__container .header__dc span{
+.dark__container .header__dc span {
   font-family: 'Red Rose', cursive;
   font-size: 1.8rem;
 }
 
-.dark__container .header__dc p{
+.dark__container .header__dc p {
   font-size: 1.2rem;
   margin-bottom: 4.7rem;
 }
 
-.dark__container a{
+.dark__container a {
   text-decoration: none;
   font-size: 1rem;
   color: var(--color-blueligth);
 }
 
-.dark__container a:hover{
+.dark__container a:hover {
   color: var(--color-greylight);
 }
 
-.form_input{
+.form_input {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form_input input:not(:last-child){
+.form_input input:not(:last-child) {
   background: var(--color-darkligth);
   outline: none;
-  border:none;
+  border: none;
   width: 26rem;
   height: 4rem;
   color: var(--color-greylight);
@@ -112,217 +110,94 @@
   padding-left: 1.4rem;
 }
 
-.form_input input:not(:last-child):hover{
+.form_input input:not(:last-child):hover {
   background: var(--color-darkligth2);
 }
 
-.input__login{
-  height: .1rem;
+.input__login {
+  height: 0.1rem;
   width: 100%;
-  background:var(--color-greylight);
+  background: var(--color-greylight);
   margin-bottom: 1.5rem;
 }
 
-.btn__login{
+.btn__login {
   width: 11.9rem;
   height: 2.5rem;
   margin: 2.4rem 2.4rem;
   border-radius: 3rem;
   background: transparent;
   color: var(--color-blueligth);
-  border: var(--color-greylight) solid .1rem;
+  border: var(--color-greylight) solid 0.1rem;
   cursor: pointer;
 }
 
 /*container register*/
 
-.container__register{
- position: absolute;
- display: flex;
- margin-top: 10rem;
-}
-
-.btn__login:hover{
-  background: var(--color-green);
-  color: var(--color-white);
-}
-
-.blue__container-register{
-  /*Aqui é o conteundo de informação do register
-  durante a animação, a pseudo classe vai sobrepor*/
+.container__register {
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #54c4cc;
-  width: 26rem;
-  height: var(--height);
-  color: var(--color-white);
-}
-
-
-
-=======
-
-/*Container Login*/
-.container__login{
-  display: none;/*aqui fica flex*/
-  justify-content: center;
-  width: var(--width);
-  height: var(--height);
   margin-top: 10rem;
 }
 
-.blue__container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-blueligth);
-  width: 26rem;
-  height: var(--height);
-  color: var(--color-white); 
-}
-
-.blue__container::before{/*a animação vai usuar essa pseudo classe para fazer
-  animação de transição */
-  content: "";
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-blueligth);
-  width: 26rem;
-  height: var(--height);
-  color: var(--color-white); 
-
-  left: 0%;
-
-}
-
-.blue__container span{
-  font-size: 2rem;
-}
-
-.blue__container .title__bc{  
-  font-family: 'Red Rose', cursive;
-  font-size: 3.4rem; 
-}
-
-.blue__container p{
-  margin-bottom: 1.7rem;
-  text-align: justify;
-  padding: 2rem 2rem;
-}
-
-.blue__container .button__signup{
-  color: var(--color-white);
-  background: var(--color-red);
-  border-radius: 3rem;
-  border: none;
-  width: 11.9rem;
-  height: 2.5rem;
-  font-size:1.4rem;
-}
-
-.dark__container{
-  background: var(--color-dark);
-  color: var(--color-white);
-  width: 26rem;
-}
-
-.dark__container .header__dc{
-  width: 100%;
-  margin: 5.2rem 0 4.7rem 0;
-  margin-bottom: 2.5rem;
-}
-
-.dark__container .header__dc span{
-  font-family: 'Red Rose', cursive;
-  font-size: 1.8rem;
-}
-
-.dark__container .header__dc p{
-  font-size: 1.2rem;
-  margin-bottom: 4.7rem;
-}
-
-.dark__container a{
-  text-decoration: none;
-  font-size: 1rem;
-  color: var(--color-blueligth);
-}
-
-.dark__container a:hover{
-  color: var(--color-greylight);
-}
-
-.form_input{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form_input input:not(:last-child){
-  background: var(--color-darkligth);
-  outline: none;
-  border:none;
-  width: 26rem;
-  height: 4rem;
-  color: var(--color-greylight);
-  caret-color: var(--color-greylight);
-  padding-left: 1.4rem;
-}
-
-.form_input input:not(:last-child):hover{
-  background: var(--color-darkligth2);
-}
-
-.input__login{
-  height: .1rem;
-  width: 100%;
-  background:var(--color-greylight);
-  margin-bottom: 1.5rem;
-}
-
-.btn__login{
-  width: 11.9rem;
-  height: 2.5rem;
-  margin: 2.4rem 2.4rem;
-  border-radius: 3rem;
-  background: transparent;
-  color: var(--color-blueligth);
-  border: var(--color-greylight) solid .1rem;
-  cursor: pointer;
-}
-
-/*container register*/
-
-.container__register{
- position: absolute;
- display: flex;
- margin-top: 10rem;
-}
-
-.btn__login:hover{
+.btn__login:hover {
   background: var(--color-green);
   color: var(--color-white);
 }
 
-.blue__container-register{
+.blue__container-register {
   /*Aqui é o conteundo de informação do register
   durante a animação, a pseudo classe vai sobrepor*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #54c4cc;
   width: 26rem;
   height: var(--height);
   color: var(--color-white);
+  background:#447279;
 }
 
+#img__rocket {
+  background-image: url('./img/rocket.png');
+  width: 14.3rem;
+  height: 13.6rem;
+}
 
->>>>>>> 20bdf4fde20a84c237a7b845d9761de6a9197578
+.blue__container-register h3{
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0 3.6rem 1.6rem;
+  text-align: left;
+}
+
+.blue__container-register h5{
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: .8rem;
+}
+
+.blue__container-register ul{
+  text-align: left;
+  margin: 1rem 3.6rem 1.2rem 3.6rem;
+}
+
+.blue__container-register ul li{
+  margin-bottom: .8rem;
+}
+
+.blue__container-register a{
+  color: var(--color-white);
+  width: 11.9rem;
+  height: 2.5rem;
+  border-radius: 3rem;
+  border: none;
+  background: var(--color-red);
+  text-decoration: none;
+  transition: .3s;
+}
+
+.blue__container-register a:hover{
+  background: var(--color-green);
+  transition: .3s;
+}
