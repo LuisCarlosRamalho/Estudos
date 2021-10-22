@@ -1,6 +1,6 @@
 /*Container Login*/
 .container__login {
-  display: flex; /*aqui fica flex*/
+  display: flex; 
   justify-content: center;
   width: var(--width);
   height: var(--height);
@@ -18,7 +18,7 @@
   color: var(--color-white);
 }
 
-.blue__container::before {
+.container::before {
   /*a animação vai usuar essa pseudo classe para fazer
   animação de transição */
   content: '';
@@ -33,6 +33,7 @@
   color: var(--color-white);
 
   left: 0%;
+  z-index: 11;
 }
 
 .blue__container span {
@@ -58,6 +59,7 @@
   width: 11.9rem;
   height: 2.5rem;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .dark__container {
@@ -200,4 +202,32 @@
 .blue__container-register a:hover{
   background: var(--color-green);
   transition: .3s;
+}
+
+/*ORRGANIZANDO AS VISUALIZAÇOES DOS CONTAINERS*/
+.container__login .blue__container,
+.container__login .dark__container{
+  z-index: 12;
+}
+
+.blue__container-register .blue__container,
+.blue__container-register .dark__container{
+  z-index: -1;
+}
+
+/*MOVIMENTAÇÃO DOS CONTAINERS*/
+
+.sign-in-js .container__login .blue__container,
+.sign-in-js .container__login .dark__container{
+  z-index: -1;
+  opacity: 0;
+}
+
+.sign-in-js .blue__container-register{
+  z-index: 12;
+}
+
+.sign-in-js .container::before{
+  display: flex;
+  left: 50%;
 }
