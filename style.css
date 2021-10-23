@@ -1,11 +1,13 @@
 /*Container Login*/
 .container__login {
-  display: flex; 
+  position: relative;
+  display: flex; /*aqui fica flex*/
   justify-content: center;
   width: var(--width);
   height: var(--height);
   margin-top: 10rem;
 }
+
 
 .blue__container {
   display: flex;
@@ -23,15 +25,10 @@
   animação de transição */
   content: '';
   position: absolute;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: var(--color-blueligth);
   width: 26rem;
   height: var(--height);
   color: var(--color-white);
-
   left: 0%;
   z-index: 1;
 }
@@ -156,7 +153,6 @@
   width: 26rem;
   height: var(--height);
   color: var(--color-white);
-  background:#447279;
 }
 
 #img__rocket {
@@ -204,10 +200,11 @@
   transition: .3s;
 }
 
-/*ORRGANIZANDO AS VISUALIZAÇOES DOS CONTAINERS*/
+/*ORGANIZADO AS VISUALIAZAÇÕES DOS CONTAINES*/
+
 .container__login .blue__container,
 .container__login .dark__container{
-  z-index: 12;
+  z-index: 1;
 }
 
 .blue__container-register .blue__container,
@@ -216,22 +213,19 @@
 }
 
 /*MOVIMENTAÇÃO DOS CONTAINERS*/
-
-.sign-up-js .container__login .blue__container,
-.sign-up-js .container__login .dark__container{
+.sign-up-js .container__login .dark__container,
+.sign-up-js .container__login .blue__container{
   z-index: -1;
 }
 
 .sign-up-js .blue__container-register{
   z-index: 12;
 }
-
 .sign-up-js .container::before{
-  display: flex;
+  display: flex;  
   left: 50%;
   animation: moveUp .7s;
 }
-
 
 .sign-in-js .container::before{
   animation: moveIn .7s;
@@ -239,7 +233,7 @@
 
 
 .sign-in-js .container__login .blue__container,
-.sign-in-js .container__login .dark__container {
+.sign-in-js .container__login .dark__container{
   z-index: 12;
 }
 
