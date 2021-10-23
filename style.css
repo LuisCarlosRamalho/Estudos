@@ -33,7 +33,7 @@
   color: var(--color-white);
 
   left: 0%;
-  z-index: 11;
+  z-index: 1;
 }
 
 .blue__container span {
@@ -217,17 +217,102 @@
 
 /*MOVIMENTAÇÃO DOS CONTAINERS*/
 
-.sign-in-js .container__login .blue__container,
-.sign-in-js .container__login .dark__container{
+.sign-up-js .container__login .blue__container,
+.sign-up-js .container__login .dark__container{
   z-index: -1;
-  opacity: 0;
 }
 
-.sign-in-js .blue__container-register{
+.sign-up-js .blue__container-register{
   z-index: 12;
 }
 
-.sign-in-js .container::before{
+.sign-up-js .container::before{
   display: flex;
   left: 50%;
+  animation: moveUp .7s;
+}
+
+
+.sign-in-js .container::before{
+  animation: moveIn .7s;
+}
+
+
+.sign-in-js .container__login .blue__container,
+.sign-in-js .container__login .dark__container {
+  z-index: 12;
+}
+
+/*CRIANDO A ANIMAÇÃO DO CONTAINER*/
+@keyframes moveUp {
+  from {
+    left: 0%;
+    width: 26rem;
+  }
+
+  to{
+    left: 50%;
+    width: 26rem;
+  }
+}
+
+@keyframes moveIn {
+  from {
+    left: 50%;
+    width: 26rem;
+    z-index: 13;
+  }
+
+  to{
+    left: 0%;
+    width: 26rem;
+    z-index: 13;
+  }
+}
+
+/*CONTEÚDO DENTRO DO ::BEFORE*/
+.sign-up-js .container__login .blue__container{
+  z-index: -1;
+  position: relative;
+  animation: deslocamento .6s;
+}
+
+.sign-up-js .container__login .dark__container{
+  z-index: -1;
+  position: relative;
+  animation: deslocamentoesquerda .6s;
+}
+
+/*CRIANDO ANIMAÇÃO DOS CONTEÚDOS DOS CONTAINER*/
+
+@keyframes deslocamento {
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 11;
+  }
+
+99%{
+  left: 200px;
+  opacity: .1;
+  z-index: 11;
+}
+  to {
+    left: 200px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes deslocamentoesquerda {
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 11;
+  }
+  to {
+    left: -200px;
+    opacity: 0;
+    z-index: -1;
+  }
 }
