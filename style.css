@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--color-blueligth);
+  background: transparent;
   width: 26rem;
   height: var(--height);
   color: var(--color-white);
@@ -224,25 +224,21 @@
 .sign-up-js .container::before{
   display: flex;  
   left: 50%;
-  animation: moveUp .7s;
+  animation: moveUp 1.7s;
 }
 
 .sign-in-js .container::before{
-  animation: moveIn .7s;
+  animation: moveIn 1.7s;
 }
 
 
-.sign-in-js .container__login .blue__container,
-.sign-in-js .container__login .dark__container{
-  z-index: 12;
-}
 
 /*CRIANDO A ANIMAÇÃO DO CONTAINER*/
 @keyframes moveUp {
   from {
     left: 0%;
     width: 26rem;
-  }
+  } 
 
   to{
     left: 50%;
@@ -254,59 +250,94 @@
   from {
     left: 50%;
     width: 26rem;
-    z-index: 13;
+    z-index: 10;
+  }
+
+ 
+  to{
+    left: 0%;
+    width: -26rem;
+  }
+}
+
+/*MOVENDO COTEÚDO DENTRO DOS CONTAINERS*/
+/*ANIMAÇÃO DO CLICK NO SIGN UP*/
+
+.sign-up-js .container__login .blue__container{
+  position: relative;
+  z-index: -1;
+  animation: fadeout 1.4s;
+}
+
+.sign-up-js .blue__container-register{
+  position: relative;
+  animation: showitem 1.7s;
+}
+
+/*ANIMAÇÃO DO CLICK NO SIGN IN*/
+.sign-in-js .container__register .blue__container-register{
+  position: relative;
+  animation: hiddenItem 1.7s;
+}
+
+.sign-in-js .container__login .blue__container{
+  position: relative;
+  animation: hiddenItem2 1.8s;  
+}
+
+
+@keyframes hiddenItem {
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 12;
+  }
+  to {
+    left: -210px;
+    opacity: -1;
+    z-index: -1;
+  }
+}
+
+@keyframes hiddenItem2 {
+  from {
+    opacity: 0;
+    z-index: -1;
+    left: 210px;
+  }
+  to {
+    opacity: 1;
+    z-index: 35;
+    left: 0;
+  }
+}
+ 
+
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    z-index: 11;
+    left: 0;
+  }
+
+  to {
+    opacity: 0;
+    z-index: -1;
+    left: 200px;
+  }
+}
+
+@keyframes showitem {
+  from {    
+    left: -200px;
+    opacity: 0;
   }
 
   to{
-    left: 0%;
-    width: 26rem;
-    z-index: 13;
-  }
-}
-
-/*CONTEÚDO DENTRO DO ::BEFORE*/
-.sign-up-js .container__login .blue__container{
-  z-index: -1;
-  position: relative;
-  animation: deslocamento .6s;
-}
-
-.sign-up-js .container__login .dark__container{
-  z-index: -1;
-  position: relative;
-  animation: deslocamentoesquerda .6s;
-}
-
-/*CRIANDO ANIMAÇÃO DOS CONTEÚDOS DOS CONTAINER*/
-
-@keyframes deslocamento {
-  from {
     left: 0;
     opacity: 1;
-    z-index: 11;
-  }
-
-99%{
-  left: 200px;
-  opacity: .1;
-  z-index: 11;
-}
-  to {
-    left: 200px;
-    opacity: 0;
-    z-index: -1;
+    z-index: 12;
   }
 }
-
-@keyframes deslocamentoesquerda {
-  from {
-    left: 0;
-    opacity: 1;
-    z-index: 11;
-  }
-  to {
-    left: -200px;
-    opacity: 0;
-    z-index: -1;
-  }
-}
+ 
